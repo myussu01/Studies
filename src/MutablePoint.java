@@ -15,9 +15,10 @@ public class MutablePoint {
         this.k+= j;
     }
 
-    public void scale(double l){
+    public MutablePoint scale(double l){
         this.x*=l;
         this.k*=l;
+        return this;
     }
 
     public double getX() {

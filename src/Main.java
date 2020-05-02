@@ -78,7 +78,6 @@ public class Main {
         public Queen(int x, int y){
             super(x,y);
         }
-
         @Override
         boolean canAttack(ChessPiece p) {
             if((this.getX() == p.getX()) || this.getY() == p.getY()){
@@ -155,11 +154,10 @@ public class Main {
             System.out.println(ch.get(j).canAttack(ch.get(j+1)));
         }
 
-        LabeledPoint h = new LabeledPoint("Plane",4.5,3.6);
-        System.out.print(h.getLabel() + " " + h.getX() + " " + h.getK());
-
 
         // use in.nextInt(); to read an int, and use in.next().charAt(0); to read a character
-
+        MutablePoint d = new MutablePoint(34,45);
+        d.k = 49;
+        System.out.println(d.x + " " + d.k);
     }
 }
