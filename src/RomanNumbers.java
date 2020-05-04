@@ -3,13 +3,18 @@ import java.util.Scanner;
 public class RomanNumbers {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        //System.out.print("How many numbers would you like to enter");
+        System.out.print("How many numbers would you like to enter");
         String k = "";
-      /*  while(in.hasNext()){
+        String j = "";
+        while(in.hasNextLine()){
 
-           }*/
-        String f = convert(4);
-        System.out.println(f);
+            j = in.next();
+            if(j.isEmpty())break;
+            System.out.println(j);
+        }
+        System.out.println("Finished looping ");
+       /* String f = convert(4);
+        System.out.println(f);*/
     }
     private static String convert (int x){
         String s= "";
