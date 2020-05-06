@@ -159,5 +159,13 @@ public class Main {
         MutablePoint d = new MutablePoint(34,45);
         d.k = 49;
         System.out.println(d.x + " " + d.k);
+
+        BankAccount k = new BankAccount(300);
+        System.out.println(k.getMax() + " " + k.getMin());
+        k.updateBalance(200);
+        k.updateBalance(400);
+        k.updateBalance(3);
+        System.out.println(k.getMax() + " " + k.getMin());
+
     }
 }
