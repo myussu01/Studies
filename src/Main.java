@@ -165,6 +165,7 @@ public class Main {
         k.updateBalance(200);
         k.updateBalance(400);
         k.updateBalance(3);
+        k.updateBalance(1);
         System.out.println(k.getMax() + " " + k.getMin());
 
     }

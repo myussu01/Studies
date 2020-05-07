@@ -1,25 +1,17 @@
 import java.util.Scanner;
 
-public class ScannerDemo2
-{
-    public static void main(String[] args)
-    {
-        // Declare an object and initialize with
-        // predefined standard input object
-        Scanner sc = new Scanner(System.in);
+public class ScannerDemo2<T> {
+    T name;
 
-        // Initialize sum and count of input elements
-        int sum = 0, count = 0;
+   public ScannerDemo2(T x){
+       this.name = x;
+   }
 
-        // Check if an int value is available
-        while (sc.hasNextInt())
-        {
-            // Read an int value
-            int num = sc.nextInt();
-            sum += num;
-            count++;
-        }
-        int mean = sum / count;
-        System.out.println("Mean: " + mean);
+    public T getName() {
+        return name;
+    }
+
+    public void setName(T name) {
+        this.name = name;
     }
 }
