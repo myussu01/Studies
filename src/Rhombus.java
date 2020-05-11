@@ -11,13 +11,13 @@ public class Rhombus {
                 System.out.print('*');
             System.out.print('\n');
         }
-        /*for(i=3;i>=0;i--)                    // To print part 2 of shape
+        for(i=3;i>=0;i--)                    // To print part 2 of shape
         {
             for(x=0;x<4-i;x++)   // To print white spaces
                 System.out.print(' ');
             for(j=0;j<2*i-1;j++)                // To print '*'
                 System.out.print('*');
             System.out.println();
-        }*/
+        }
     }
 }
