@@ -1,1 +1,1 @@
-"# Studies" 
+Private studies
